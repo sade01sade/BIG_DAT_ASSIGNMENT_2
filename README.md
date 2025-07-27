@@ -128,7 +128,7 @@ The goal of this project is to analyze the **Uber Fares Dataset** to gain meanin
 
 ---
 
-## 📸 Screenshots (in `/screenshots/`)
+## 📸 Screenshots 
 - 📂 Data loading and cleaning process
 
 <img width="913" height="248" alt="load_data" src="https://github.com/user-attachments/assets/36bd6549-ef50-4e9b-b2d1-30768b85d681" />
