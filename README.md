@@ -1,5 +1,5 @@
 # Name: SADE George Sade
-# ID: 
+# ID:  26915
 # 🚕 Uber Fares Data Analysis Project — Power BI
 
 📊 **Course**: Introduction to Big Data Analytics (INSY 8413)  
@@ -43,11 +43,39 @@ The goal of this project is to analyze the **Uber Fares Dataset** to gain meanin
          df.head()
   ```
 - Checked and removed missing/null values
+  ```Python
+    # Basic Info
+     print(f"Rows: {df.shape[0]}, Columns: {df.shape[1]}")
+     print("\nColumn types:\n", df.dtypes)
+
+     # Check missing values
+     print("\nMissing values:\n", df.isnull().sum())
+
+     # Drop missing
+     df_cleaned = df.dropna()
+     print("\nAfter cleaning:\n", df_cleaned.isnull().sum())
+     df_cleaned.shape
+  ```
 - Performed data type corrections
 - Feature engineering:
+  ```Python
+  df_cleaned['pickup_datetime'] = pd.to_datetime(df_cleaned['pickup_datetime'])
+  df_cleaned['hour'] = df_cleaned['pickup_datetime'].dt.hour
+  df_cleaned['day'] = df_cleaned['pickup_datetime'].dt.day
+  df_cleaned['month'] = df_cleaned['pickup_datetime'].dt.month
+  df_cleaned['day_of_week'] = df_cleaned['pickup_datetime'].dt.day_name()
+  df_cleaned['is_peak'] = df_cleaned['hour'].apply(lambda h: 1 if 7 <= h <= 9 or 17 <= h <= 19 else 0)
+
+   df_cleaned.head()
+  ```
   - Extracted `hour`, `day`, `month`, `day_of_week` from `pickup_datetime`
   - Created `is_peak` flag for peak hour categorization
 - Saved clean data as `uber_enhanced.csv`
+  ```Python
+  df_cleaned.to_csv("uber_enhanced.csv", index=False)
+  from google.colab import files
+  files.download("uber_enhanced.csv")
+  ```
 
 ---
 
@@ -55,7 +83,9 @@ The goal of this project is to analyze the **Uber Fares Dataset** to gain meanin
 - Descriptive statistics: mean, median, quartiles
 - Visuals created:
   - Histogram & box plot of fare amounts
+     <img width="271" height="234" alt="Screenshot 2025-07-27 190836" src="https://github.com/user-attachments/assets/2d191342-86c5-4073-9cc9-33893b6fc347" />
   - Line chart of monthly trends
+     <img width="286" height="235" alt="Screenshot 2025-07-27 192451" src="https://github.com/user-attachments/assets/75cc7831-31eb-49a8-a9d9-0e2aaf8fa443" />
   - Matrix heatmap of hourly/weekday fares
   - Bar charts for fares by hour/day
   - KPI cards for total rides, average fare, etc.
@@ -79,7 +109,6 @@ The goal of this project is to analyze the **Uber Fares Dataset** to gain meanin
 | `uber_dashboard.pbix`    | Power BI dashboard file |
 | `/screenshots/`          | Step-by-step process visuals |
 | `README.md`              | Project documentation |
-| `Assignment_Report.pptx` | Final report (PowerPoint format or GitHub markdown) |
 
 ---
 
@@ -118,7 +147,7 @@ You may choose one of the two:
 - ✅ Public GitHub repository created
 - ✅ All files & documentation uploaded
 - ✅ Email sent to **eric.maniraguha@auca.ac.rw** with GitHub repo link
-- ✅ Deadline respected (before Sabbath on 25 July 2025)
+- ✅ Deadline respected (Sunday before 11:59pm)
 
 ---
 
