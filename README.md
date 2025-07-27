@@ -99,6 +99,8 @@ The goal of this project is to analyze the **Uber Fares Dataset** to gain meanin
       <img width="307" height="234" alt="Screenshot 2025-07-27 193245" src="https://github.com/user-attachments/assets/94b35981-132a-442e-a17b-4918351ac24a" />
 
   - KPI cards for total rides, average fare, etc.
+ 
+    
   - Map of ride pickups (if coordinates available)
 
 ---
