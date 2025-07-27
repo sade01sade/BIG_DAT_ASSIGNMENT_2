@@ -83,6 +83,7 @@ The goal of this project is to analyze the **Uber Fares Dataset** to gain meanin
 - Descriptive statistics: mean, median, quartiles
 - Visuals created:
   - Histogram & box plot of fare amounts
+ 
      <img width="271" height="234" alt="Screenshot 2025-07-27 190836" src="https://github.com/user-attachments/assets/2d191342-86c5-4073-9cc9-33893b6fc347" />
      
   - Line chart of monthly trends
