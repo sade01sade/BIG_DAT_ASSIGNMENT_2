@@ -130,9 +130,18 @@ The goal of this project is to analyze the **Uber Fares Dataset** to gain meanin
 
 ## 📸 Screenshots (in `/screenshots/`)
 - 📂 Data loading and cleaning process
+
+<img width="913" height="248" alt="load_data" src="https://github.com/user-attachments/assets/36bd6549-ef50-4e9b-b2d1-30768b85d681" />
+
+<img width="331" height="335" alt="clean_missing_data" src="https://github.com/user-attachments/assets/46f04225-41f7-4cbd-8e4a-70c721166ec8" />
+
 - 🧮 Feature engineering steps
+
+  <img width="882" height="251" alt="feature_engineering" src="https://github.com/user-attachments/assets/39d90bb3-7fe1-4b91-88f3-62157d581958" />
+
 - 📊 Power BI visualizations & dashboard
-- ⚙️ DAX measures (if used)
+
+  <img width="659" height="372" alt="PowerBI_Visuals" src="https://github.com/user-attachments/assets/84bebf40-af15-4e3b-8d13-29a2163dbe1b" />
 
 ---
 
