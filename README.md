@@ -103,6 +103,9 @@ The goal of this project is to analyze the **Uber Fares Dataset** to gain meanin
       <img width="514" height="331" alt="Screenshot 2025-07-27 193845" src="https://github.com/user-attachments/assets/6c74d0a3-de0f-4e89-aac5-9bbc8d231e12" />
    
   - Map of ride pickups (if coordinates available)
+ 
+    <img width="748" height="313" alt="Screenshot 2025-07-27 194041" src="https://github.com/user-attachments/assets/33954d31-24c2-4ca1-ae6c-172720ede636" />
+
 
 ---
 
