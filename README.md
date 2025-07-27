@@ -87,9 +87,13 @@ The goal of this project is to analyze the **Uber Fares Dataset** to gain meanin
      <img width="271" height="234" alt="Screenshot 2025-07-27 190836" src="https://github.com/user-attachments/assets/2d191342-86c5-4073-9cc9-33893b6fc347" />
      
   - Line chart of monthly trends
+    
      <img width="286" height="235" alt="Screenshot 2025-07-27 192451" src="https://github.com/user-attachments/assets/75cc7831-31eb-49a8-a9d9-0e2aaf8fa443" />
      
   - Matrix heatmap of hourly/weekday fares
+
+      <img width="377" height="286" alt="Screenshot 2025-07-27 192906" src="https://github.com/user-attachments/assets/467ee435-dcc3-4a81-bb18-05fd27d431ce" />
+
   - Bar charts for fares by hour/day
   - KPI cards for total rides, average fare, etc.
   - Map of ride pickups (if coordinates available)
